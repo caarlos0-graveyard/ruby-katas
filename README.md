@@ -1,4 +1,20 @@
-joinville-software-craftsmanship
-================================
+# Ruby Katas
 
-Some problem resolutions done in Joinville Software Craftsmanship meetup group
+### Setup
+
+```sh
+bundle install
+```
+
+### Watch specs
+
+```sh
+bundle exec guard
+```
+
+### Create a new Kata
+
+```sh
+touch lib/my_kata.rb
+touch spec/my_kata_spec.rb
+```
