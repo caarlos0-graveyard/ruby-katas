@@ -1,4 +1,5 @@
 require "rspec"
+require_relative "spec_helper"
 require_relative "../lib/word_wrapper"
 
 describe WordWrapper do
