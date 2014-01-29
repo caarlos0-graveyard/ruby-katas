@@ -6,6 +6,7 @@ describe WordWrapper do
 
   it { should respond_to :wrap }
 
+  it { expect(wrapper.wrap(nil)).to eql("") }
   it { expect(wrapper.wrap("")).to eql("") }
   it { expect(wrapper.wrap("regis")).to eql("regis") }
   it { expect(wrapper.wrap("ticaracatica")).to eql("ticar\nacati\nca") }

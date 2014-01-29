@@ -5,7 +5,7 @@ class WordWrapper
 
   def wrap(words)
     # splits at each space and map
-    words.split(" ").map do |word|
+    (words || "").split(" ").map do |word|
       # split every word greater than the limit into chunks of 1 to limit chars
       word.scan(/.{1,#{@limit}}/)
     # join them all
