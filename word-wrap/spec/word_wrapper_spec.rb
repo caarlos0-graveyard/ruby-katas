@@ -10,7 +10,14 @@ describe WordWrapper do
   it { expect(wrapper.wrap("regis")).to eql("regis") }
   it { expect(wrapper.wrap("ticaracatica")).to eql("ticar\nacati\nca") }
   it { expect(wrapper.wrap("los tests")).to eql("los\ntests") }
-  it { expect(wrapper.wrap("carlos alexandro")).to eql("carlo\ns\nalexa\nndro") }
-  it { expect(wrapper.wrap("los test treta")).to eql("los\ntest\ntreta") }
-  it { expect(wrapper.wrap("regis eduardo weizenmann gregol")).to eql("regis\neduar\ndo\nweize\nnmann\ngrego\nl") }
+  it {
+    expect(wrapper.wrap("carlos alexandro")).to eql("carlo\ns\nalexa\nndro")
+  }
+  it {
+    expect(wrapper.wrap("los test treta")).to eql("los\ntest\ntreta")
+  }
+  it {
+    expect(wrapper.wrap("regis eduardo weizenmann gregol")).to(
+      eql("regis\neduar\ndo\nweize\nnmann\ngrego\nl"))
+  }
 end
