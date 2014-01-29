@@ -1,5 +1,5 @@
 require "rspec"
-require_relative "word_wrapper"
+require_relative "../word_wrapper"
 
 describe WordWrapper do
   subject(:wrapper) { WordWrapper.new(5) }
